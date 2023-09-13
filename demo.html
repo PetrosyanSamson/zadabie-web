@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!-- комментарий в HTML -->
+
+<!-- в первой строке мы сообщаем браузеру,
+  что это документ HTML5 -->
+
+<html lang="ru">
+
+<head>
+    <title>Задание 1</title>
+</head>
+
+<h1><strong>Маркированный список гиперсылок: </strong></h1>
+
+<li><a href="http://www.kubsu.ru">Кубанский Государственный Университет</a></li>
+
+<li><a href="https://www.kubsu.ru/index.php">Основной сайт КубГу</a></li>
+
+<img src="https://upload.wikimedia.org/wikipedia/ru/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9A%D1%83%D0%B1%D0%93%D0%A3.png" alt="КубГу" style="width: 200px;" />
+
+<li><a href="https://inlnk.ru/VoQlgn">Кубанский Государственный Университет ( по сокращенной ссылке )</a></li>
+
+<li><a href="https://inlnk.ru/YAyD7j">Основной сайт КубГу ( по сокращенной ссылке )</a></li>
+
+<li><a href="#form">Ccылкa на фрагмент</a></li>
+
+<li><a href="#form">С параметром id</a></li>
+
+<li><a href="/about.html">about</a></li>
+
+<li><a href="javascript:void(0);">Пустая ссылка</a></li>
+
+<li><a href="demo1.html"> на страницу в каталоге уровнем выше текущего</a></li>
+
+<li><a href="demo2.html">на страницу в каталоге двумя уровнями выше</a></li>
+
+<li>контекстная <a href="$bred">ссылка</a> в тексте абзаца</li>
+
+<li><a href="https://vk.com/">На внешний ресурс (ВК) </a></li>
+
+
+<body>
+    <li><a>Это ссылка без URL</a></li>
+</body>
+<li><a></a>ссылка без href</li>
+<li><a href="#" rel="no">запрещающая переход</a></li>
+<li><a href="#" rel="noindex">запрещаяющая индексацию</a></li>
+<li><a href="https://kubsu.ru?productid=1234">URL3</a></li>
+
+<li><a href="#example_id">ID</a></li>
+
+<li><a id="example_id">ID!</a></li>
+
+
+
+<map name="Map">
+    <area shape="circle" coords="209,124,40" href="https://www.youtube.com/watch?v=MBe1h80ghKA" />
+    <area shape="rect" coords="155,205,208,302" href="https://www.youtube.com/watch?v=CNYOtuK9xpk" />
+</map>
+<img usemap="#Map" src="https://i0.wp.com/formaciononline.eu/wp-content/uploads/2018/05/curso-completo-html-css-gratis.png?w=640&ssl=1" alt="picture" width="400px" height="200px" />
+<br />
+
+<form id="form" action="#">
+    <p>Форма</p>
+    <p>
+        <input type="text" name="name" placeholder="Имя"><Br>
+        <input type="tel" name="" placeholder="телефон"><Br>
+        <input type="email" name="" placeholder="e-mail"><br>
+        <input type="date" name="" value="дата рождения"><Br>
+        <br>
+    <p>Пол </p>
+    <input type="radio" name="sex" value="">Мужской<Br>
+    <input type="radio" name="sex" value="">Женский<Br>
+    <br>
+    <h3>Любимый язык программирования </h3>
+    <input type="checkbox" name="lang" value="">pascal<Br>
+    <input type="checkbox" name="lang" value="">C<Br>
+    <input type="checkbox" name="lang" value="">C++<Br>
+    <input type="checkbox" name="lang" value="">JS<Br>
+    <input type="checkbox" name="lang" value="">PHP<Br>
+    <input type="checkbox" name="lang" value="">Python<Br>
+    <input type="checkbox" name="lang" value="">Java<Br>
+    <input type="checkbox" name="lang" value="">Haskel<Br>
+    <input type="checkbox" name="lang" value="">Clojure<Br>
+    <input type="checkbox" name="lang" value="">Prolog<Br>
+    <input type="checkbox" name="lang" value="">Scala<Br>
+    <br>
+    <input type="textarea" placeholder="Биография"><br>
+
+    <input type="checkbox" name="checkbox" value="">с контрактом ознакомлен (а)<Br>
+
+    <p>
+</form>
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0" />
+    <title>Уведомление о сохранении </title>
+</head>
+<body>
+    <button id="saveButton" onclick="showSavedNotification()">Сохранить!</button>
+    <div id="successNotification" style="display: none;">Сохранено</div>
+    <script>
+function showSavedNotification() {
+            document.getElementById("successNotification").style.display = "block";
+}
+    </script>
+</body>
+
+</html>
+
